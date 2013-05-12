@@ -1,0 +1,5 @@
+{
+    "require": {
+        "thauex/simple-html-dom": "dev-master"
+    }
+}
