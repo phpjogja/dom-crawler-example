@@ -16,12 +16,14 @@ $sell     = $dom->find('table.tbl-view tr', 10)->find('td', 4);
 
 
 echo <<<HEREDOC
+<pre>
 
 Source: <a href="{$url}">{$url}</a>
 
-<p>Mata uang: <strong>{$currency->plaintext}</strong></p>
-<p>Simbol: <strong>{$symbol->plaintext}</strong></p>
-<p>Beli: <strong>{$buy->plaintext}</strong></p>
-<p>Jual: <strong>{$sell->plaintext}</strong></p>
+Mata uang <strong> $currency->plaintext </strong>
+Simbol    <strong> $symbol->plaintext   </strong>
+Beli      <strong> $buy->plaintext      </strong>
+Jual      <strong> $sell->plaintext     </strong>
 
+</pre>
 HEREDOC;
