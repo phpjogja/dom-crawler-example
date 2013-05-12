@@ -17,7 +17,7 @@ $sell     = $dom->find('table.tbl-view tr', 10)->find('td', 4);
 
 echo <<<HEREDOC
 
-Source: <a href="http://www.bankmandiri.co.id/resource/kurs.asp">http://www.bankmandiri.co.id/resource/kurs.asp</a>
+Source: <a href="{$url}">{$url}</a>
 
 <p>Mata uang: <strong>{$currency->plaintext}</strong></p>
 <p>Simbol: <strong>{$symbol->plaintext}</strong></p>
